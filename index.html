@@ -9,7 +9,7 @@
 </head>
 <body class="dark:bg-darkbase01 transition delay-150">
   <header class="bg-litebase00 mx-6 mt-4 dark:bg-darkbase01 transition delay-150" >
-    <nav class="flex flex-col md:flex-row justify-between">
+    <nav class="flex md:flex-row justify-between">
       <div class="text-litebase03 dark:text-darkbase06 font-mono font-bold text-4xl">
         <div class="flex text-litebase03  dark:text-darkbase06  font-mono font-bold text-4xl">
           <a id="darkButton" href="" class="hover:text-darkbase0A transition delay-150"><h2>Me. </h2></a>
@@ -17,18 +17,30 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row flex-left justify-between text-litebase03 dark:text-darkbase06">
-        <ul class="text-center md:flex" id="links">
+      <div id="menu" class="text-right pl-20 transition delay-150 text-4xl text-darkbase00 hover:dark:text-darkbase07 dark:text-litebase00 hover:text-darkbase07 md:hidden"><button class"">&#8801;</button></div>
+        <ul class="hidden md:flex" id="links">
           <li><a href="links/about.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">About</a></li>
           <li><a href="links/exp.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Experience</a></li>
           <li><a href="links/edu.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Education</a></li>
           <li><a href="links/contact.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Contact</a></li>
         </ul>
-        <div class="pt-5 text-center md:pt-0">
+        <div class="hidden md:block pt-5 text-left md:pt-0">
           <a href="docs/AlanThomasCVv2.pdf" class="bg-litebase0B text-litebase00 p-3 rounded-full font-bold font-sans hover:bg-litebase04 hover:text-litebase01 transition delay-100">Downoload Resume</a>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700 md:hidden">
       </div>
     </nav>
+      <div id="menu-items" class="hidden flex flex-col flex-left justify-between text-litebase03 dark:text-darkbase06">
+        <ul class="md:flex" id="links">
+          <li><a href="links/about.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">About</a></li>
+          <li><a href="links/exp.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Experience</a></li>
+          <li><a href="links/edu.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Education</a></li>
+          <li><a href="links/contact.html" class="font-sans mx-2 text-xl font-bold hover:text-litebase0C">Contact</a></li>
+        </ul>
+        <div class="md:block pt-5 text-left md:pt-0">
+          <a href="docs/AlanThomasCVv2.pdf" class="bg-litebase0B text-litebase00 p-3 rounded-full font-bold font-sans hover:bg-litebase04 hover:text-litebase01 transition delay-100">Downoload Resume</a>
+        </div>
+        <hr class="w-48 h-1 my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700 md:hidden">
+      </div>
   </header>
   <section class="text-center bg-center bg-no-repeate bg-cover bg-[url('../img/hero-bg.png')] ">
     <div class="my-20 py-20 container ">
@@ -40,18 +52,18 @@
   <footer class="bg-litebase06 mt-20">
     <div class="flex flex-col text-left md:flex-row container mt-8 ">
       <div class="mt-5 md:mt-8 mx-20 md:p-7 text-litebase00">
-        Social Media<br>
+        <span class="font-bold">Social Media</span><br>
         <a href="https://www.linkedin.com/in/alan-thomas-8727201a1/">linkedin</a><br>
         <a href="https://github.com/raphhawk">github</a><br>
       </div><br>
       <div class=" ml-20 md:mt-8 md:p-5 text-litebase00">
-        Contact<br>
+        <span class="font-bold">Contact</span><br>
         location: New Delhi, India<br>
         ph: +91 934-048-5257<br>
         email: bing619.at@gmail.com<br>
       </div>
       <div class="mx-10 md:ml-20 md:mt-8 p-10 text-litebase00">
-        Alan Tom Thomas &copy 2023
+        <span class="font-bold">Alan Tom Thomas &copy 2023</span>
       </div>
     </div>
   </footer>

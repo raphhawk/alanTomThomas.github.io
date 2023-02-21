@@ -9,7 +9,7 @@
 </head>
 <body class="dark:bg-darkbase01 transition delay-150">
   <header class="bg-litebase00 dark:bg-darkbase01 mx-6 mt-4 transition delay-150">
-    <nav class="flex flex-col md:flex-row justify-between">
+    <nav class="flex md:flex-row justify-between">
       <div class="text-litebase03 font-mono font-bold text-4xl">
         <div class="flex text-litebase03 dark:text-darkbase06 font-mono font-bold text-4xl">
           <a id="darkButton" href="" class="hover:text-darkbase0A transition delay-150"><h2>My Contact. </h2></a>
@@ -17,33 +17,47 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row flex-left justify-between text-litebase03 dark:text-darkbase06">
-        <ul class="text-center md:flex" id="links">
+      <div id="menu" class="text-right pl-20 transition delay-150 text-4xl text-darkbase00 hover:dark:text-darkbase07 dark:text-litebase00 hover:text-darkbase07 md:hidden"><button class"">&#8801;</button></div>
+        <ul class="hidden text-center md:flex" id="links">
           <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="../index.html">Home</a></li>
           <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./about.html">About</a></li>
           <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./exp.html">Experience</a></li>
           <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./edu.html">Education</a></li>
           <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="#">Contact</a></li>
         </ul>
-        <div class="pt-5 text-center md:pt-0">
+        <div class="hidden pt-5 text-center md:pt-0">
           <a class="bg-litebase0B text-litebase00 p-3 rounded-full font-bold font-sans hover:bg-litebase04 hover:text-litebase01 transition delay-100" href="../docs/AlanThomasCVv2.pdf">Downoload resume</a>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700 md:hidden">
       </div>
     </nav>
+    <div id="menu-items" class="hidden flex flex-col flex-left justify-between text-litebase03 dark:text-darkbase06">
+      <ul class="md:flex" id="links">
+        <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="../index.html">Home</a></li>
+        <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./about.html">About</a></li>
+        <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./exp.html">Experience</a></li>
+        <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="./edu.html">Education</a></li>
+        <li><a class="font-sans mx-2 text-xl font-bold hover:text-litebase0C"href="#">Contact</a></li>
+      </ul>
+      <div class="pt-5 md:pt-0">
+        <a class="bg-litebase0B item-left text-litebase00 p-3 rounded-full font-bold font-sans hover:bg-litebase04 hover:text-litebase01 transition delay-100" href="../docs/AlanThomasCVv2.pdf">Downoload resume</a>
+      </div>
+      <hr class="w-48 h-1 my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700 md:hidden">
+    </div>
   </header>
   <section>
     <div class="mx-auto text-center mt-8 drop-shadow-xl dark:text-darkbase06">
-      <h2 class="font-bold text-2xl p-8">phone <br class="md:hidden"><span class="text-litebase00 bg-litebase05 dark:text-darkbase00 rounded-full p-1 md:p-4">+91 934-048-5257</span></h2>
-      <h2 class="font-bold text-2xl p-8">github <br class="md:hidden"><span class="text-litebase00 bg-litebase0E dark:text-darkbase00 rounded-full p-1 md:p-4">github.com/raphhawk</span></h2>
-      <h2 class="font-bold text-2xl p-8">email <br class="md:hidden"><span class="text-litebase00 bg-litebase08 dark:text-darkbase00 rounded-full p-1 md:p-4">bing619.at@gmail.com</span></h2>
-      <h2 class="font-bold text-2xl p-8">linkedin <br class="md:hidden">
- <span class="text-litebase00 bg-litebase0F dark:text-darkbase00 rounded-full p-1 md:p-4"><span class="hidden">linkedin.com/in/</span>alan-thomas-8727201a1</span></h2>
+      <h2 class="font-bold text-2xl p-8">phone <br><br class="md:hidden"><span class="text-litebase00 bg-litebase05 dark:text-darkbase00 rounded-full p-2 md:p-4">+91 934-048-5257</span></h2>
+      <h2 class="font-bold text-2xl p-8">github <br><br class="md:hidden"><span class="text-litebase00 bg-litebase0E dark:text-darkbase00 rounded-full p-2 md:p-4"><a class="hover:dark:text-darkbase06 hover:text-darkbase00" href="https://github.com/raphhawk">github.com/raphhawk</a></span></h2>
+      <h2 class="font-bold text-2xl p-8">email <br><br class="md:hidden"><span class="text-litebase00 bg-litebase08 dark:text-darkbase00 rounded-full p-2 md:p-4">bing619.at@gmail.com</span></h2>
+      <h2 class="font-bold text-2xl p-8">linkedin <br><br class="md:hidden">
+ <span class="text-litebase00 bg-litebase0F dark:text-darkbase00 rounded-full p-2 md:p-4"><span class="hidden">linkedin.com/in/</span><a class="hover:dark:text-darkbase06 hover:text-darkbase00" href="https://www.linkedin.com/in/alan-thomas-8727201a1">alan-thomas-8727201a1</a></span></h2>
+      
     </div>
   </section>
   <footer class="bg-litebase06 mt-20">
     <div class=" container mt-8 text-center">
       <div class="p-20 text-litebase00">
-        Alan Tom Thomas &copy 2023, New Delhi
+        <span class="font-bold">Alan Tom Thomas &copy 2023, New Delhi</span>
       </div>
     </div>
   </footer>

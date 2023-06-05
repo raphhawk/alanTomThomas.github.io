@@ -4,7 +4,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Edu } from "./pages/Edu";
 import { Nopage } from "./pages/Nopage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
     }
   }
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -54,7 +54,7 @@ function App() {
         </Route>
         <Route path="*" element={<Nopage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

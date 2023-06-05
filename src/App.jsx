@@ -48,6 +48,10 @@ function App() {
           }
         >
           <Route index element={<Home setNav={setNav} />} />
+          <Route
+            path="alanTomThomas.github.io"
+            element={<Home setNav={setNav} />}
+          />
           <Route path="abt" element={<About setNav={setNav} />} />
           <Route path="exp" element={<Exp setNav={setNav} />} />
           <Route path="edu" element={<Edu setNav={setNav} />} />

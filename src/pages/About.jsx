@@ -17,7 +17,7 @@ export const About = ({ setNav }) => {
               className=""
             />
           </div>
-          <div className="md:mt-52 mt-8 md:p-20 flex flex-col h-fit">
+          <div className="md:mt-52 mt-8 md:p-20 flex flex-col h-fit overflow-hidden">
             <h3 className="text-center md:text-left font-bold pb-8 text-xl dark:text-bgLight">
               {aboutData.greet}
             </h3>

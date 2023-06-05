@@ -25,8 +25,51 @@ import godotLogo from "./images/logos/godot.png";
 import kritaLogo from "./images/logos/krita.png";
 import librespriteLogo from "./images/logos/libresprite.ico";
 import lmmsLogo from "./images/logos/lmms.png";
+import reactLogo from "./images/logos/react.svg";
+import tailwindLogo from "./images/logos/tailwind.svg";
+import ghpagesLogo from "./images/logos/ghpages.png";
+import viteLogo from "./images/logos/vite.svg";
+import reactRouterLogo from "./images/logos/reactRouter.svg";
+import ghActionsLogo from "./images/logos/ghActions.svg";
+import adfLogo from "./images/logos/adf.svg";
 
 export const tecs = {
+  adf: {
+    name: "Azure data factory",
+    ico: adfLogo,
+    link: "https://azure.microsoft.com/en-in/products/data-factory",
+  },
+  ghactions: {
+    name: "github actions",
+    ico: ghActionsLogo,
+    link: "https://github.com/features/actions",
+  },
+  reactRouter: {
+    name: "react router",
+    ico: reactRouterLogo,
+    link: "https://reactrouter.com/en/main",
+    dark: true,
+  },
+  vite: {
+    name: "vite",
+    ico: viteLogo,
+    link: "https://vitejs.dev/",
+  },
+  ghpages: {
+    name: "Github Pages",
+    ico: ghpagesLogo,
+    link: "https://pages.github.com/",
+  },
+  tailwind: {
+    name: "tailwindcss",
+    ico: tailwindLogo,
+    link: "https://tailwindcss.com/",
+  },
+  react: {
+    name: "react",
+    ico: reactLogo,
+    link: "https://react.dev/",
+  },
   oracle: {
     name: "oracle",
     ico: oracleLogo,

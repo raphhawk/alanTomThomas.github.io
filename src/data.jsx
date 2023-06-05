@@ -52,22 +52,28 @@ export const aboutData = {
       <span className="text-blue font-bold">Aspiring Web Developer</span> and a{" "}
       <span className="text-blue">Systems Engineer</span>. I started my tech
       journey on <span className="text-blue font-bold">December 13th 2021</span>{" "}
-      when <span className="text-blue font-bold">TCS</span> (Tata Consultancy
-      Services) hired me as an{" "}
-      <span className="text-blue">Assistant Systems Engineer</span>. I was
-      working in an <span className="text-blue font-bold">EDI</span> (Electronic
-      Data Interchange) Environment, where{" "}
-      <span className="text-blue font-bold">invoices</span> and{" "}
-      <span className="text-blue font-bold">purchase orders</span> (P.O.) from
-      vendors and business teams pile up and get reconciled for the integrity
-      and enter into the database for{" "}
-      <span className="text-blue">Data Warehousing</span> and{" "}
-      <span className="text-blue font-bold">ETL</span> (Extract Transform Load)
-      purposes. As time passed, I sensed my interest in Web Developement and{" "}
-      <span className="text-blue">Software Engineer</span> to be growing with
-      me. Hence I decided to end my career in EDI and ETL development to pursue
-      a career in Web Development. I thank TCS for all the support they could
-      provide me with my career. Thankyou :).
+      as an <span className="text-blue">Assistant Systems Engineer</span> at{" "}
+      <span className="text-blue font-bold">TCS</span> (Tata Consultancy
+      Services) . I was working on{" "}
+      <span className="text-blue">backend databases</span> such as{" "}
+      <span className="text-blue font-bold">Snowflake</span> and{" "}
+      <span className="text-blue font-bold">Oracle</span> maintaining{" "}
+      <span className="text-blue">
+        data and ETL (Extract Transform Load) pipelines
+      </span>{" "}
+      through{" "}
+      <span className="text-blue font-bold">
+        {" "}
+        ADF (Azure Data Factory), Snowpark and Informatica(IICS){" "}
+      </span>{" "}
+      in an <span className="text-blue font-bold">EDI</span> (Electronic Data
+      Interchange) Environment. As time passed, I started to learn and build
+      <span className="text-blue"> frontend projects </span> with{" "}
+      <span className="text-blue font-bold">React</span> and{" "}
+      <span className="text-blue font-bold">Tailwind</span> which I enjoyed
+      doing hence I am on a verge to become a{" "}
+      <span className="text-blue"> full stack web developer. </span> Thankyou
+      :).
     </p>
   ),
 };
@@ -93,20 +99,22 @@ export const expData = {
       location: "Indore, Madhya Pradesh, India",
       duration: "Dec 2021 - current (1.6y)",
       about: (
-        <p className="m-8 md:m-0 text-justify dark:text-green">
-          <br />
-          Managed and deployed different automation pipelines in CA Workload
-          Automation for communication of over 60 vendors
-          <br className="hidden md:block" />
-          Created ETL mappings for onprem to cloud migration on a hybrid cloud
-          architecture project in Informatica and Oracle.
-          <br className="hidden md:block" />
-          Wrote scripts for underlying process in automation for Electronic Data
-          Interchange (EDI) transactions like invoices and
-          <br className="hidden md:block" />
-          purchase orders between vendors and business team.
-          <br className="hidden md:block" />
-        </p>
+        <ul className="m-8 list-disc md:m-0 text-justify dark:text-green">
+          <li>
+            Managed and deployed data pipelines with Snowpark, ADF (Azure Data
+            Factory), and Informatica (IICS) for transaction of data over 60
+            vendors.
+          </li>
+          <li>
+            Migrated large datasets into Snowflake with Snowpipe and the "copy"
+            command. Created ETL mappings for onprem to cloud migration on a
+            hybrid cloud architecture project in Informatica and Oracle.
+          </li>
+          <li>
+            Created stored procedures and UDFs (user defined functions) in
+            Snowflake for underlying data processes and ETL worlflows.
+          </li>
+        </ul>
       ),
       tecs: [
         tecs.nodejs,
@@ -114,33 +122,32 @@ export const expData = {
         tecs.snowflake,
         tecs.gcp,
         tecs.oracle,
+        tecs.adf,
         tecs.databricks,
         tecs.informatica,
       ],
     },
   },
   personalExp: {
-    tentacles: {
-      name: "Tentacles",
-      repolink: "https://github.com/raphhawk/Tentacles",
-      header: "An implementation of microservices architecture in action.",
+    portfolioSite: {
+      name: "Portfolio Website",
+      repolink: "https://github.com/raphhawk/alanTomThomas.github.io/tree/p-v2",
+      execlink: "https://raphhawk.github.io/alanTomThomas.github.io/",
+      header: "A Portfolio Website created with React and Tailwindcss.",
       about: {
-        head: "An implementation of microservices architecture in action.",
-        body: "This Web App implements various microservices such as Authentication, Queuing, Logging, Broker and Listening. These microservices are the interconnected with the Front End through REST apis. The front end is designed for testing each of these microservices.",
+        head: "A Portfolio Website created with React and Tailwindcss.",
+        body: "A Frontend Single Page Application that helps showcase the projects I have been working on. The Application use React 18 as front end library, React Router 6 for routing, Tailwindcss as css preprocessor and Vite as development server. The site is deployed to Github Pages with Github Actions and uses Github as version control",
       },
       tecs: [
-        tecs.golang,
-        tecs.goChi,
-        tecs.docker,
-        tecs.mongodb,
-        tecs.rabbitmq,
-        tecs.make,
-        tecs.html,
-        tecs.css,
+        tecs.react,
+        tecs.tailwind,
         tecs.javascript,
-        tecs.bootstrap,
+        tecs.nodejs,
+        tecs.reactRouter,
+        tecs.vite,
+        tecs.ghactions,
+        tecs.ghpages,
         tecs.github,
-        tecs.dockerCompose,
       ],
     },
     nodeContainers: {
@@ -161,6 +168,29 @@ export const expData = {
         tecs.dockerSwarm,
         tecs.github,
         tecs.curl,
+        tecs.dockerCompose,
+      ],
+    },
+    tentacles: {
+      name: "Tentacles",
+      repolink: "https://github.com/raphhawk/Tentacles",
+      header: "An implementation of microservices architecture in action.",
+      about: {
+        head: "An implementation of microservices architecture in action.",
+        body: "This Web App implements various microservices such as Authentication, Queuing, Logging, Broker and Listening. These microservices are the interconnected with the Front End through REST apis. The front end is designed for testing each of these microservices.",
+      },
+      tecs: [
+        tecs.golang,
+        tecs.goChi,
+        tecs.docker,
+        tecs.mongodb,
+        tecs.rabbitmq,
+        tecs.make,
+        tecs.html,
+        tecs.css,
+        tecs.javascript,
+        tecs.bootstrap,
+        tecs.github,
         tecs.dockerCompose,
       ],
     },

@@ -15,7 +15,7 @@ export const Exp = ({ setNav }) => {
         {Object.values(expData.proExp).map((c) => {
           return (
             <li
-              className="flex flex-col md:flex-row items-center mt-10"
+              className="flex flex-col justify-between md:flex-row items-center mt-10"
               key={c.name}
             >
               <a href={c.link} target="_blank">
@@ -25,7 +25,7 @@ export const Exp = ({ setNav }) => {
                   className="md:mx-20 w-64 hover:hue-rotate-180 transition duration-150"
                 />
               </a>
-              <div className="text-center md:text-left mt-8 md:mt-0 md:ml-20 md:mr-40">
+              <div className="text-center md:text-left mt-8 md:px-20 md:mt-0 md:ml-20 md:mr-30">
                 <h1 className="text-xl text-bgLight">{c.name}</h1>
                 <div className="flex md:flex-row flex-col md:justify-between">
                   <h2 className="text-blue">{c.location}</h2>
@@ -38,7 +38,7 @@ export const Exp = ({ setNav }) => {
           );
         })}
       </ul>
-      <h1 className="pt-20 ml-8 text-center md:text-left text-2xl text-bgDark">
+      <h1 className="pt-20 ml-8 text-center md:text-left text-2xl text-bgDark dark:text-bgLight">
         Personal Projects
       </h1>
       <ul className="flex flex-col md:items-center">

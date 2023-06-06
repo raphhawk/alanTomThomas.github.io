@@ -226,7 +226,7 @@ export const Resume = () => {
         <ResContent roleType={role.webDeveloper} />
         <Footer />
       </article>
-      <a href="/assets/docs/resume-web-light.pdf">Download Resume</a>
+      <a href="../assets/docs/resume-web-light.pdf">Download Resume</a>
     </article>
   );
 };

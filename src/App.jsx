@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Edu } from "./pages/Edu";
 import { Nopage } from "./pages/Nopage";
+import { Resume } from "./pages/Resume";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="abt" element={<About setNav={setNav} />} />
           <Route path="exp" element={<Exp setNav={setNav} />} />
           <Route path="edu" element={<Edu setNav={setNav} />} />
+          <Route path="res" element={<Resume setNav={setNav} />} />
         </Route>
         <Route path="*" element={<Nopage />} />
       </Routes>

@@ -21,6 +21,12 @@ export default {
   theme: {
     colors: snowMountain,
     extend: {
+      width: {
+        a4: "210mm",
+      },
+      height: {
+        a4: "297mm",
+      },
       backgroundImage: {
         "hero-pattern": "url('/src/images/hero-wallpaper.png')",
       },

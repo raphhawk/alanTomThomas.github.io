@@ -94,12 +94,13 @@ export const expData = {
   proExp: {
     tcs: {
       name: "Tata Consultancy Services",
+      designation: "Systems Engineer",
       link: "https://www.tcs.com/",
       logo: tcsLogo,
       location: "Indore, Madhya Pradesh, India",
       duration: "Dec 2021 - current (1.6y)",
       about: (
-        <ul className="m-8 list-disc md:m-0 text-justify dark:text-green">
+        <ul className="m-8 list-disc md:m-0 text-justify">
           <li>
             Managed and deployed data pipelines with Snowpark, ADF (Azure Data
             Factory), and Informatica (IICS) for transaction of data over 60
@@ -111,8 +112,8 @@ export const expData = {
             hybrid cloud architecture project in Informatica and Oracle.
           </li>
           <li>
-            Created stored procedures and UDFs (user defined functions) in
-            Snowflake for underlying data processes and ETL worlflows.
+            Created stored procedureduData.es and UDFs (user defined functions)
+            in Snowflake for underlying data processes and ETL worlflows.
           </li>
         </ul>
       ),
@@ -129,8 +130,8 @@ export const expData = {
     },
   },
   personalExp: {
-    portfolioSite: {
-      name: "Portfolio Website",
+    mySelf: {
+      name: "My Self",
       repolink: "https://github.com/raphhawk/alanTomThomas.github.io/tree/p-v2",
       execlink: "https://raphhawk.github.io/alanTomThomas.github.io/",
       header: "A Portfolio Website created with React and Tailwindcss.",

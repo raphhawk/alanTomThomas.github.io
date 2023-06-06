@@ -31,7 +31,7 @@ export const Exp = ({ setNav }) => {
                   <h2 className="text-blue">{c.location}</h2>
                   <h2 className="text-red">{c.duration}</h2>
                 </div>
-                {c.about}
+                <div className="dark:text-green">{c.about}</div>
                 <Techs tecs={c.tecs} />
               </div>
             </li>

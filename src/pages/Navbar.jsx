@@ -2,9 +2,9 @@ import { navData } from "../data";
 import darkModeIcon from "/src/icos/dark-mode.svg";
 import { nanoid } from "nanoid";
 import { Outlet, Link } from "react-router-dom";
-import hamburger from "/src/icos/hamburger.svg";
 import close from "/src/icos/close.svg";
-import { useState } from "react";
+import resumeWebDark from "../assets/docs/resume-web-dark.pdf";
+import resumeWebLight from "../assets/docs/resume-web-light.pdf";
 
 export const Navbar = ({ setDarkMode, darkMode, setCloseNav }) => {
   return (
@@ -44,6 +44,29 @@ export const Navbar = ({ setDarkMode, darkMode, setCloseNav }) => {
                     alt="Dark Mode Icon"
                     className="h-6 w-6 dark:invert"
                   />
+                </li>
+              );
+            }
+            if (nav.name === "resume") {
+              return (
+                <li
+                  key={nanoid()}
+                  className="mx-2 dark:text-yellow hover:text-green dark:hover:text-green transition delay-70 hover:cursor-pointer mt-4 md:mt-0 "
+                >
+                  <a
+                    href={darkMode ? resumeWebDark : resumeWebLight}
+                    className="text-left md:hidden"
+                  >
+                    Download Resume
+                  </a>
+                  <Link
+                    to={nav.route}
+                    onClick={() => setCloseNav(true)}
+                    className="invisible md:visible capitalize"
+                  >
+                    {nav.name}
+                  </Link>
+                  <hr className="md:hidden h-2 w-8 border border-2" />
                 </li>
               );
             }

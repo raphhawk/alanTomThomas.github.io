@@ -1,5 +1,8 @@
 import { contactData, homeData, expData, eduData } from "../data";
 import { tecs } from "../techReps";
+import resumeWebDark from "../assets/docs/resume-web-dark.pdf";
+import resumeWebLight from "../assets/docs/resume-web-light.pdf";
+import { Footer } from "../Footer";
 
 const role = {
   webDeveloper: {
@@ -150,7 +153,7 @@ const ResContent = ({ roleType }) => {
   );
 };
 
-const Footer = () => {
+const Foot = () => {
   return (
     <div>
       <div className="flex flex-row mx-10 mt-4">
@@ -215,18 +218,24 @@ const Footer = () => {
   );
 };
 
-export const Resume = () => {
+export const Resume = ({ darkMode }) => {
   return (
     <article className=" flex flex-col items-center dark:bg-bgDark">
       <article
-        className="h-a4 w-a4 bg-bgLight my-20 rounded-sm dark:bg-bgDark shadow-2xl"
+        className="h-a4 w-a4 bg-bgLight my-20 rounded-sm border border-2 border-green dark:border-0 dark:bg-bgDark shadow-2xl"
         id="resume"
       >
         <ResHeader />
         <ResContent roleType={role.webDeveloper} />
-        <Footer />
+        <Foot />
       </article>
-      <a href="../assets/docs/resume-web-light.pdf">Download Resume</a>
+      <a
+        href={darkMode ? resumeWebDark : resumeWebLight}
+        className="bg-blue p-4 my-10 text-bgLight shadow-2xl rounded-full hover:bg-green transition delay-70 drop-shadow-2xl"
+      >
+        Download Resume
+      </a>
+      <Footer />
     </article>
   );
 };

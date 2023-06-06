@@ -56,7 +56,10 @@ function App() {
           <Route path="abt" element={<About setNav={setNav} />} />
           <Route path="exp" element={<Exp setNav={setNav} />} />
           <Route path="edu" element={<Edu setNav={setNav} />} />
-          <Route path="res" element={<Resume setNav={setNav} />} />
+          <Route
+            path="res"
+            element={<Resume setNav={setNav} darkMode={darkMode} />}
+          />
         </Route>
         <Route path="*" element={<Nopage />} />
       </Routes>
